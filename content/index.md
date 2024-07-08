@@ -6,7 +6,6 @@ title: Welcome to ZHenry's notebook set!
 本网站的主要作者们就读于[南开大学统计与数据科学学院](https://stat.nankai.edu.cn/)，我们正在尝试践行开源精神，将所学所整理的知识分享出来，在辅助自己理解知识的同时，期待能够帮助到更多的人。
 如果你有知识想要分享，也欢迎联系我们。
 
->[!联系我们的方式]
 >📬邮箱：newworld654@126.com
 ## 关于本网页构建方式
 本网页通过quartz搭建，关于quartz的详细部分请参考[quartz官方帮助文档](https://quartz.jzhao.xyz)。
