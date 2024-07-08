@@ -34,7 +34,7 @@ title: Welcome to ZHenry's notebook set!
 
 
 ### `Albert`的运筹学笔记
-
+1. [[7.8最优化]]
 
 
 ## 如何返回🔙
