@@ -39,5 +39,8 @@ title: Welcome to ZHenry's notebook set!
 ### `Zhenry`的24暑假学习笔记
 1. [[Zhenry的24暑假学习笔记/博客工作流记录|博客工作流记录]]
 2. [[git学习笔记]]
+3. [[quartz4学习笔记]]
+4. [[mkdocs学习笔记]]
+5. 
 ## 如何返回🔙
 在任何本网站子界面，你都可以点击页面最下方的 [Back to Zhenry's foundation](https://zhenrys.github.io)实现返回🔙。
