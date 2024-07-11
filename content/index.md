@@ -1,7 +1,7 @@
 ---
 title: Welcome to ZHenry's notebook set!
 ---
-
+![[tianjin.jpg]]
 ## 关于我们
 本网站的主要作者们就读于[南开大学统计与数据科学学院](https://stat.nankai.edu.cn/)，我们正在尝试践行开源精神，将所学所整理的知识分享出来，在辅助自己理解知识的同时，期待能够帮助到更多的人。
 如果你有知识想要分享，也欢迎联系我们。
@@ -16,10 +16,11 @@ title: Welcome to ZHenry's notebook set!
 
 
 ## 学习笔记库简介
-目前更新的学习笔记目前主要有三大部分，分别为
+目前更新的学习笔记目前主要有四大部分，分别为
 * **R.M.T**的**数理统计**笔记
 * **Oxabriel**的**数据结构**笔记
 * **Albert**的**运筹学**笔记
+* **Zhenry**的24暑假学习笔记
 
 我们欢迎所有人阅读并提出建议。
 
@@ -37,6 +38,8 @@ title: Welcome to ZHenry's notebook set!
 2. [[7.9最优化]]
 3. [[7.9最优化修正]]
 
-
+### `Zhenry`的24暑假学习笔记
+1. [[Zhenry的24暑假学习笔记/博客工作流记录|博客工作流记录]]
+2. [[git学习笔记]]
 ## 如何返回🔙
 在任何本网站子界面，你都可以点击页面最下方的 [Back to Zhenry's foundation](https://zhenrys.github.io)实现返回🔙。
