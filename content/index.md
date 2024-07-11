@@ -12,10 +12,9 @@ title: Welcome to ZHenry's notebook set!
 搭建过程与结合obsidian的工作流构建主要参考[如何使用 Quartz 4.0 和 GitHub Pages 免费发布 Obsidian 笔记](https://insile.github.io/my-notes/%E7%AC%94%E8%AE%B0/%E5%85%AC%E5%85%B1%E7%AC%94%E8%AE%B0%E5%BA%93/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Quartz-4.0-%E5%92%8C-GitHub-Pages-%E5%85%8D%E8%B4%B9%E5%8F%91%E5%B8%83-Obsidian-%E7%AC%94%E8%AE%B0)
 
 ## 关于本网页的工作流
-详情请移步☞[[博客工作流记录]]
+详情请移步☞[[Zhenry的24暑假学习笔记/博客工作流记录|博客工作流记录]]
 
-
-## 学习笔记库简介
+## 学习笔记库概要
 目前更新的学习笔记目前主要有四大部分，分别为
 * **R.M.T**的**数理统计**笔记
 * **Oxabriel**的**数据结构**笔记
@@ -35,8 +34,7 @@ title: Welcome to ZHenry's notebook set!
 
 ### `Albert`的运筹学笔记
 1. [[7.8最优化]]
-2. [[7.9最优化]]
-3. [[7.9最优化修正]]
+2. [[7.9最优化修正]]
 
 ### `Zhenry`的24暑假学习笔记
 1. [[Zhenry的24暑假学习笔记/博客工作流记录|博客工作流记录]]
