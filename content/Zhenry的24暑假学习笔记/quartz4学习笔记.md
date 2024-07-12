@@ -1,6 +1,6 @@
 
 ## `Quartz`简介
-quartz是一个调度工具，由javascripts编写，很主流。主要由trigger和job构成。常用在执行**在什么情况下**（可以很复杂）干**什么事**（可以很复杂）的操作。
+quartz是一个调度工具，由javascripts编写，很主流。主要由trigger和job构成。常用在执行**在什么情况下**（可以很复杂）干**什么事**（可以很复杂）的操作。==多用于网站的前端。自定义效果差==
 
 参考文档☞[quartz官方中文文档](https://xuzongbao.gitbooks.io/quartz/content/)
 

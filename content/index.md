@@ -41,7 +41,7 @@ title: Welcome to Zhenry's notebook set!
 2. [[git学习笔记]]
 3. [[quartz4学习笔记]]
 4. [[mkdocs学习笔记]]
-5. [[博客更新记录]]
+5. [[博客配置重要更新日志]]
 
 ## 如何返回🔙
 在任何本网站子界面，你都可以点击页面最下方的 [Back to Zhenry's foundation](https://zhenrys.github.io)实现返回🔙。
