@@ -43,6 +43,10 @@ title: Welcome to Zhenry's notebook set!
 3. [[quartz4学习笔记]]
 4. [[mkdocs学习笔记]]
 5. [[博客配置重要更新日志]]
+6. [[杂学-电影中的政治学笔记重拾]]
+7. 
+
+---
 
 ## 如何返回🔙
 在任何本网站子界面，你都可以点击页面最下方的[Back to Zhenry's foundation](Insight/)实现返回🔙。
