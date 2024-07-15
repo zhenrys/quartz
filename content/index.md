@@ -3,8 +3,8 @@ title: Welcome to Zhenry's notebook set!
 ---
 ![[tianjin.jpg]]
 ## 关于我们
-本网站的主要作者们就读于[南开大学统计与数据科学学院](https://stat.nankai.edu.cn/)，我们正在尝试践行开源精神，将所学所整理的知识分享出来，在辅助自己理解知识的同时，期待能够帮助到更多的人。
-如果你有知识想要分享，也欢迎联系我们。
+本网站的主要作者们就读于[南开大学统计与数据科学学院](https://stat.nankai.edu.cn/)，我们正在尝试践行开源精神，将所学所整理的知识与[洞见](Insight/)分享出来，在辅助自己理解知识的同时，期待能够帮助到更多的人[🥰](Insight/)。
+如果你有知识想要分享，也欢迎联系我们🤗。
 
 >📬邮箱：newworld654@126.com
 ## 关于本网页构建方式
@@ -21,7 +21,7 @@ title: Welcome to Zhenry's notebook set!
 * **Albert**的**运筹学**笔记
 * **Zhenry**的24暑假学习笔记
 
-我们欢迎所有人阅读并提出建议。
+我们欢迎所有人阅读并提出建议🤗。
 
 ### `R.M.T`的数理统计笔记
 1. [[前言与引言]]
@@ -43,6 +43,7 @@ title: Welcome to Zhenry's notebook set!
 3. [[quartz4学习笔记]]
 4. [[mkdocs学习笔记]]
 5. [[博客配置重要更新日志]]
+
 
 ## 如何返回🔙
 在任何本网站子界面，你都可以点击页面最下方的 [Back to Zhenry's foundation](https://zhenrys.github.io)实现返回🔙。
