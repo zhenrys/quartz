@@ -50,5 +50,5 @@ title: Welcome to Zhenry's notebook set!
 
 ---
 
-## 如何返回博客界面🔙
-在任何本网站子界面，你都可以点击页面最下方的[Back to Zhenry's foundation](zhenrys.github.io)实现返回🔙。
+## 如何返回博客界面
+在任何本网站子界面，你都可以点击页面最下方的[Back to Zhenry's foundation](https://zhenrys.github.io)实现返回🔙。
