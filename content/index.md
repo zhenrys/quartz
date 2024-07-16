@@ -1,7 +1,7 @@
 ---
 title: Welcome to Zhenry's notebook set!
 ---
-![[tianjin.jpg]]
+[![天津之眼的洞见](tianjin.jpg)](Insight/)
 ## 关于我们
 本网站的主要作者们就读于[南开大学统计与数据科学学院](https://stat.nankai.edu.cn/)，我们正在尝试践行开源精神，将所学所收获的知识与洞见分享出来，在辅助自己理解知识的同时，期待能够帮助到更多的人。
 如果你有知识想要分享，也欢迎联系我们🤗。
@@ -51,4 +51,4 @@ title: Welcome to Zhenry's notebook set!
 ---
 
 ## 如何返回🔙
-在任何本网站子界面，你都可以点击页面最下方的[Back to Zhenry's foundation](Insight/)实现返回🔙。
+在任何本网站子界面，你都可以点击页面最下方的[Back to Zhenry's foundation]()实现返回🔙。
