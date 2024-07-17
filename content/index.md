@@ -47,6 +47,7 @@ title: Welcome to Zhenry's notebook set!
 6. [[杂学-电影中的政治学笔记重拾]]
 7. [[速成课笔记-Crash Course Computer Science]]
 8. [[数据结构笔记1-绪论]]
+9. [[python绘图笔记-seaborn]]
 
 ---
 
