@@ -230,7 +230,7 @@ plt.show()
 ---
 ![](image-20240717081329276.png)
 
-个人认为，不如`cmap="maga"好看
+个人认为，不如`cmap="maga"`好看
 
 ---
 ![](image-20240717081423085.png)
@@ -310,7 +310,7 @@ plt.show()
 plt.legend().remove()
 ```
 ---
-纯享版~
+图片略，简而言之就是纯享版（啥图例也没有）~
 
 ```python
 sns.lmplot(data=tips, x="total_bill", y="tip", hue="sex")
@@ -383,6 +383,6 @@ plt.savefig("boxplot.png")
 plt.show()
 ```
 
-
+不过通常就直接`ctrl+c`，没这么费劲哈哈！
 ---
 2024年7月17日06:30:22
