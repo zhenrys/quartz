@@ -59,6 +59,8 @@ title: Welcome to Zhenry's notebook set!
 #### 数据结构笔记：
 1. [[数据结构笔记1-绪论]]
 2. [[数据结构笔记2-线性表-顺序表]]
+3. [[数据结构笔记3-线性表-单链表]]
+
 
 #### `Crash Course Computer Science`笔记
 1. [[速成课笔记1-28计算机网络]]
