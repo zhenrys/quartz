@@ -15,7 +15,6 @@ title: Welcome to Zhenry's notebook set!
 详情请移步☞[[Zhenry的24暑假学习笔记/博客工作流记录|博客工作流记录]]
 
 ---
-[![Insight](Insight.jpg)](Insight/)
 
 ## 学习笔记库概要
 目前更新的学习笔记目前主要有四大部分，分别为
@@ -49,6 +48,7 @@ title: Welcome to Zhenry's notebook set!
 2. [[7.9最优化修正]]
 3. [[7.12最优化修正]]
 4. [[7.15最优化]]
+5. [[7.20最优化]]
 
 ---
 ### `Zhenry`的24暑假杂学笔记
@@ -79,7 +79,12 @@ title: Welcome to Zhenry's notebook set!
 1. [[杂学-电影中的政治学笔记重拾]]
 2. [[杂学-克苏鲁神话]]
 
+
 ---
 
 ## 如何返回博客界面
 在任何本网站子界面，你都可以点击页面最下方的[Back to Zhenry's foundation](https://zhenrys.github.io)实现返回🔙。
+
+---
+
+[![Insight](Insight.jpg)](Insight/)
