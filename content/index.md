@@ -1,7 +1,7 @@
 ---
 title: Welcome to Zhenry's notebook set!
 ---
-[![天津之眼的洞见](tianjin.jpg)](Insight/)
+![天津之眼的洞见](tianjin.jpg)
 ## 关于我们
 本网站的主要作者们就读于[南开大学统计与数据科学学院](https://stat.nankai.edu.cn/)，我们正在尝试践行开源精神，将所学所收获的知识与洞见分享出来，在辅助自己理解知识的同时，期待能够帮助到更多的人。
 如果你有知识想要分享，也欢迎联系我们🤗。
@@ -13,6 +13,9 @@ title: Welcome to Zhenry's notebook set!
 
 ## 关于本网页的创作工作流
 详情请移步☞[[Zhenry的24暑假学习笔记/博客工作流记录|博客工作流记录]]
+
+---
+[![Insight](Insight.jpg)](Insight/)
 
 ## 学习笔记库概要
 目前更新的学习笔记目前主要有四大部分，分别为
