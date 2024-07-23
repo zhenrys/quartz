@@ -1,6 +1,7 @@
 ---
 title: Welcome to Zhenry's Notebook Set!🗂️📚📖
 ---
+
 [![天津之眼的洞见](tianjin.jpg)](Insight/)
 
 ## 👉关于我们
@@ -54,7 +55,7 @@ title: Welcome to Zhenry's Notebook Set!🗂️📚📖
 
 ---
 ### 🛺`Zhenry`的24暑假杂学笔记
-#### 计算机-博客配置笔记
+#### 博客配置笔记
 1. [[博客配置重要更新日志]]
 2. [[quartz4学习笔记]]
 3. [[mkdocs学习笔记]]
