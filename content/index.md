@@ -1,5 +1,5 @@
 ---
-title: Welcome to Zhenry's Notebook Set!🗂️📚📖
+title: Welcome to Zhenry's Notebook Set!🗂️
 ---
 [![天津之眼的洞见](tianjin.jpg)](Insight/)
 
@@ -87,10 +87,13 @@ title: Welcome to Zhenry's Notebook Set!🗂️📚📖
 3. [数学建模-信息检索](数学建模-信息检索.md)
 4. [数学建模-Lyx排版笔记](数学建模-Lyx排版笔记.md)
 5. [数学建模-Excalidraw绘图](数学建模-Excalidraw绘图.md)
+6. [数学建模-绘图导航](数学建模-绘图导航.md)
 
 #### 杂学笔记
 1. [[杂学-电影中的政治学笔记重拾]]
 2. [[杂学-克苏鲁神话]]
+3. [杂学-抠图](杂学-抠图.md)
+4. 
 
 
 ---
