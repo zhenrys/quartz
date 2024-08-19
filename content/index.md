@@ -9,7 +9,8 @@ title: Welcome to Zhenry's Notebook Set!🗂️
 欢迎通过**发邮件**或者**留言**的方式让我们知道**你的想法**！如果你**有知识想要分享**，也**欢迎联系我们**！😊。
 
 >📬邮箱：newworld654@126.com
->🥰留言方式；点击[留言帖跳转](https://zhanghenry.site/2024/08/19/%E6%AC%A2%E8%BF%8E%E7%95%99%E8%A8%80/)，即可在下方评论区留言
+>
+>🥰留言方式；点击[留言帖跳转](https://zhanghenry.site/2024/08/19/%E6%AC%A2%E8%BF%8E%E7%95%99%E8%A8%80/)，即可在下方评论区留言~
 
 ## 👉关于本网页构建方式
 本网页通过**quartz**搭建，关于quartz的详细部分请参考[quartz官方帮助文档](https://quartz.jzhao.xyz)。
