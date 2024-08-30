@@ -70,6 +70,8 @@ title: Welcome to Zhenry's Notebook Set!🗂️
 * [CCCS笔记1-网络](CCCS笔记1-网络.md)
 * [CCCS笔记2-安全](CCCS笔记2-安全.md)
 * [CCCS笔记3-内存与CPU](CCCS笔记3-内存与CPU.md)
+* [CCCS笔记4-编程与数据结构](CCCS笔记4-编程与数据结构.md)
+* [CCCS笔记5-软件工程与操作系统](CCCS笔记5-软件工程与操作系统.md)
 
 ##### 杂学笔记
 1. [[杂学-克苏鲁神话]]
