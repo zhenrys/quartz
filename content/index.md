@@ -42,6 +42,7 @@ title: Welcome to Zhenry's Notebook Set!🗂️
 ##### 金融实战
 1. [[框架]]
 2. [[CEEMDAN学习笔记]]
+3. [原油期货文献综述](原油期货文献综述.md)
 
 
 ---
@@ -83,6 +84,8 @@ title: Welcome to Zhenry's Notebook Set!🗂️
 * [[杂学-克苏鲁神话]]
 * [杂学-抠图](杂学-抠图.md)
 * [杂学-奥运赛制](杂学-奥运赛制.md)
+* [杂学-游戏分类](杂学-游戏分类.md)
+* [杂学-英雄联盟](杂学-英雄联盟.md)
 
 ---
 ##### 🚙`Mean_tree`的计算机视觉笔记
