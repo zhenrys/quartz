@@ -11,12 +11,13 @@ title: Welcome to Zhenry's Notebook Set!🗂️
 >留言方式：点击[留言帖跳转](https://zhanghenry.site/2024/08/19/%E6%AC%A2%E8%BF%8E%E7%95%99%E8%A8%80/)，即可在下方评论区留言（如遇未显示评论区可刷新页面）。
 
 ## 👉关于作者
-目前更新的笔记库目前主要有五位作者，分别为：
+目前更新的笔记库目前主要有六位作者，分别为：
 * **Zhenry**
 * **R.M.T**
 * **Oxabriel**
 * **Albert**
 * **Mean_tree**
+* **LYZS** 
 
 我们欢迎所有人阅读并提出建议。
 
