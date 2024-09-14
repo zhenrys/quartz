@@ -9,7 +9,7 @@ WSL官方下载Ubuntu文档☞[Install Ubuntu on WSL2 - Ubuntu WSL documentation
 
 Linux有许多不同的发行版（也称为“distros”），每个发行版都有自己的特点和目标用户群。对于初学者来说，以下几个发行版是不错的选择：
 
-- ==**Ubuntu**==：用户友好，社区支持广泛，适合初学者和桌面用户。
+- ==Ubuntu==：用户友好，社区支持广泛，适合初学者和桌面用户。
 - **Fedora**：注重开源软件和前沿技术，适合想要尝试新技术的用户。
 - **Linux Mint**：基于Ubuntu，但界面更接近Windows，适合习惯于Windows的用户。
 - **Debian**：稳定、安全，但软件版本更新较慢，适合想要稳定环境的用户。
