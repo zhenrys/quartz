@@ -56,7 +56,7 @@
 1. [Conda命令记录](Conda命令记录.md)
 2. [Linux-Vim学习笔记](Linux-Vim学习笔记.md)
 3. [Linux-WSL入门笔记](Linux-WSL入门笔记.md)
-4. [分布式-hadoop安装与配置](分布式-hadoop安装与配置.md) ✨
+4. [分布式-hadoop安装与配置](分布式-hadoop安装与配置.md) 
 
 
 ---
@@ -72,6 +72,7 @@
 ## 算法基础 
 作者：LYZS
 
-1. [算法基础1](算法基础1.md)  ✨
+1. [算法基础1](算法基础1.md)  
+2. [算法基础2](算法基础2.md) ✨
 
 
