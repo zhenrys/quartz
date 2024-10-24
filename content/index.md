@@ -36,7 +36,12 @@ title: Welcome to Zhenry's Notebook Set!🗂️
 *✨：最近更新*
 
 ---
-
 ## 👉如何返回博客界面
 在任何本网站子界面，你都可以点击页面最下方的[Back to Zhenry's foundation](https://zhenrys.github.io)实现返回🔙。
+
+
+>[!warning] Copyleft
+>除非另有说明，本网站上的内容均采用[知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议](http://creativecommons.org/licenses/by-nc-sa/4.0/)进行许可。
+>
+>请您在转载时注明来源及博客链接。
 
