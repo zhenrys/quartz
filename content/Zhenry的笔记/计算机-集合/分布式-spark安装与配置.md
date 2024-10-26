@@ -1,5 +1,8 @@
 ## 安装spark
 
+>[!warning]
+>以下代码中的`$`是linux的shell中的标识符，不是命令内容。
+
 0. 安装Spark之前需要安装Java环境和Hadoop环境。注意选择without-hadoop版本如：`spark-3.4.2-bin-without-hadoop.tgz`。
 
 下载地址：[http://spark.apache.org](http://spark.apache.org/)
@@ -24,7 +27,7 @@ export SPARK_DIST_CLASSPATH=$(/home/hadoop/module/hadoop-3.3.6/bin/hadoop classp
 ```
 
 >[!warning]-
->此处的`/home/hadoop/module/hadoop-3.3.6/bin`要换成自己的路径。可以将`vim ~/.bashrc`中**有关的配置文件拍个照**方便修改及后续。
+>此处的`/home/hadoop/module/hadoop-3.3.6/bin`要换成自己的bin路径。可以用`vim ~/.bashrc`将其中**有关的配置文件拍个照**方便修改及后续。
 
 保存配置文件后，就可以启动、运行Spark了。Spark包含多种运行模式。这里使用本地模式运行Spark。若需要使用HDFS中的文件，则在使用Spark前需要启动Hadoop。
 
@@ -32,7 +35,7 @@ export SPARK_DIST_CLASSPATH=$(/home/hadoop/module/hadoop-3.3.6/bin/hadoop classp
 ## Standalone模式
 1. 配置works
 ```shell
-cp workers.template workers
+$ cp workers.template workers
 ```
 2.配置spark-env.sh
 加入
@@ -45,8 +48,8 @@ SPARK_MASTER_PORT=7077
 
 3. 启动standalone模式
 ```shell
-./sbin/start-master.sh
-./sbin/start-workers.sh spark://localhost:7077
+$ ./sbin/start-master.sh
+$ ./sbin/start-workers.sh spark://localhost:7077
 ```
 
 ## Spark Shell
@@ -76,7 +79,7 @@ https://github.com/sbt/sbt/releases/download/v1.9.9/sbt-1.9.9.tgz
 
 从win移动到wsl里（此代码需要根据自己电脑调整）
 ```shell
-cp /mnt/d/Download_Files/Firefox_Download/sbt-1.9.9.tgz ~/software
+$ cp /mnt/d/Download_Files/Firefox_Download/sbt-1.9.9.tgz ~/software
 ```
 2.解压缩，配置环境变量
 ```shell
@@ -94,7 +97,7 @@ export PATH=$PATH:~/module/sbt/bin
 $ mkdir ~/sparkapp
 $ mkdir –p ~/sparkapp/src/main/scala
 ```
-2. 创建scala文件`(~/sparkapp/src/main/scala/SimpleApp.scala)`
+2. 创建scala文件`(~/sparkapp/src/main/scala/SimpleApp.scala)`，通过cd和vim即可
 
 写入
 ```scala
@@ -115,7 +118,7 @@ import org.apache.spark.SparkConf
 
 ```
 
-3. 然后创建一个`simple.sbt`文件（文件路径：`~/sparkapp/simple.sbt`），用于声明该应用程序的信息以及与Spark的依赖关系，具体内容如下：
+1. 然后创建一个`simple.sbt`文件（文件路径：`~/sparkapp/simple.sbt`），用于声明该应用程序的信息以及与Spark的依赖关系，具体内容如下：
 ```sbt
 name := "Simple Project"
 version := "1.0"
@@ -140,3 +143,5 @@ $ ~/module/spark/bin/spark-submit --class "SimpleApp" ~/sparkapp/target/scala-2.
 >[!warning]-
 >第五条命令注意class前面是两个`--` 。此外要确定`~/sparkapp/target/scala-2.10/simple-project_2.10-1.0.jar`的存在性。
 
+>[!Note]成功？
+>如果运行后，能在众多输出中看一行关于a和b的词频统计，说明成功完成配置并且任务执行成功。
