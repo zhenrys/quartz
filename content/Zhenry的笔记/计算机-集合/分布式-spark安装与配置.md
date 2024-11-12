@@ -129,7 +129,7 @@ libraryDependencies += "org.apache.spark" %% "spark-core" % "1.6.0“
 4.使用sbt对该应用程序进行打包，命令如下
 ```shell
 $ cd ~/sparkapp
-$  ~/module/sbt/sbt/bin/sbt package
+$ ~/module/sbt/sbt/bin/sbt package
 ```
 
 >[!warning]-
@@ -141,7 +141,33 @@ $ ~/module/spark/bin/spark-submit --class "SimpleApp" ~/sparkapp/target/scala-2.
 ```
 
 >[!warning]-
->第五条命令注意class前面是两个`--` 。此外要确定`~/sparkapp/target/scala-2.10/simple-project_2.10-1.0.jar`的存在性。
+>第五条命令注意class前面是两个`--` 。此外要确定`~/sparkapp/target/scala-2.10/simple-project_2.10-1.0.jar`的存在性。此外此处路径是两个2.10，ppt上是2.12，注意修改。
 
->[!Note]成功？
+>[!Note] 成功？
+>如果运行后，能在众多输出中看一行关于a和b的词频统计，说明成功完成配置并且任务执行成功。
+
+---
+
+## 补充-不同spark模式下提交simpleapp任务
+
+```shell
+start-dfs.sh
+start-yarn.sh
+```
+
+### 本地模式
+```shell
+~/module/spark/bin/spark-submit   --class "SimpleApp"   --master local   ~/sparkapp/target/scala-2.10/simple-project_2.10-1.0.jar
+```
+
+### standalone模式
+```shell
+~/module/spark/sbin/start-master.sh # 之后即可在 http://localhost:8080/ 上面查看进展
+
+~/module/spark/sbin/start-worker.sh spark://localhost:7077
+
+~/module/spark/bin/spark-submit   --class "SimpleApp"   --master spark://localhost:7077   --executor-memory 1G   --total-executor-cores 2   ~/sparkapp/target/scala-2.10/simple-project_2.10-1.0.jar
+```
+
+>[!Note] 成功？
 >如果运行后，能在众多输出中看一行关于a和b的词频统计，说明成功完成配置并且任务执行成功。
