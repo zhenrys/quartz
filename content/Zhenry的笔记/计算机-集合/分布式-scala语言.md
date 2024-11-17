@@ -30,6 +30,52 @@ $ spark-shell --master yarn --deploy-mode client
 :help
 ```
 
+## sbt 打包
+
+### 1. 确保项目结构正确
+
+首先，确保你的项目有正确的结构，`file1.scala`应该存放在`src/main/scala`目录下。项目的基本结构如下：
+
+```
+MyScalaProject/
+├── build.sbt
+├── src/
+│   └── main/
+│       └── scala/
+│           └── file1.scala
+└── target/   (这个目录会被自动创建)
+```
+
+### 2. 编辑`build.sbt`(已完成)
+
+### 3. 通过`sbt`打包
+
+在项目根目录下，打开终端并运行`sbt`命令。
+
+#### 打包命令：
+在`sbt`交互式控制台中，输入以下命令来生成一个JAR包：
+
+```bash
+sbt package
+```
+
+这将编译你的项目并将其打包成一个JAR文件，JAR文件将存储在`target/scala-<version>/`目录下，例如：
+
+```
+target/scala-2.10/your-project-name_2.10-0.1.jar
+```
+
+其中`your-project-name_2.13-0.1.jar`是生成的JAR文件，`2.13`是你使用的Scala版本，`0.1`是你在`build.sbt`中指定的版本。
+
+#### 运行JAR包：
+你可以使用以下命令来运行生成的JAR文件：
+
+```bash
+java -jar target/scala-2.13/your-project-name_2.13-0.1.jar
+```
+
+
+---
 # 6.1 scala基础
 ## 值和变量
 ```scala
@@ -971,4 +1017,191 @@ res10: Int = 62
 
 def powerOfTwo(x: Int): Int = {if(x == 0) 1 else 2 * powerOfTwo(x-1)}
 ```
+
+
+---
+2024年11月15日14:21:43
+
+## 6.3.3针对容器的操作
+### 1 遍历操作
+Scala容器的标准遍历==方法foreach==
+
+```scala
+def foreach[U](f: Elem => U) :Unit
+
+scala> val list = List(1, 2, 3)
+list: List[Int] = List(1, 2, 3)
+scala> val f=(i:Int)=>println(i)
+f: Int => Unit = <function1>
+scala> list.foreach(f)
+1
+2
+3
+
+```
+
+>[!Note]
+>中缀调用简化写法：“list foreach println”
+>
+>等价于“list foreach(i=>println(i))”
+
+```scala
+scala> val university = Map("NKU" ->"Nankai University", "THU" ->"Tsinghua University","PKU"->"Peking University")
+university: scala.collection.mutable.Map[String,String] = ...
+
+scala> university foreach{kv => println(kv._1+":"+kv._2)}
+NKU:Nankai University
+THU:Tsinghua University
+PKU:Peking University
+
+scala> val university = Map(“NKU" ->“Nankai University", "THU" ->"Tsinghua University","PKU"->"Peking University")
+university: scala.collection.mutable.Map[String,String] = ...
+
+scala> university foreach{kv => println(kv._1+":"+kv._2)} //键值对的 建 和 值
+NKU:Nankai University
+THU:Tsinghua University
+PKU:Peking University
+```
+
+### 2 映射操作
+映射是指通过对容器中的元素进行某些运算来生成一个新的容器。两个典型的映射操作是==map方法==和==flatMap方法==
+#### map方法（==一对一映射==）：
+将某个函数应用到集合中的每个元素，映射得到一个新的元素，map方法会返回一个与原容器类型大小都相同的新容器，只不过元素的类型可能不同
+
+```scala
+scala> val books =List("Hadoop","Hive","HDFS")
+books: List[String] = List(Hadoop, Hive, HDFS)
+scala> books.map(s => s.toUpperCase)
+//toUpperCase方法将一个字符串中的每个字母都变成大写字母
+ List[String] = List(HADOOP, HIVE, HDFS)
+scala> books.map(s => s.length) //将字符串映射到它的长度
+ List[Int] = List(6, 4, 4) //新列表的元素类型为Int
+
+```
+
+#### flatMap方法（==一对多映射==）：
+将某个函数应用到容器中的元素时，对每个元素都会返回一个容器（而不是一个元素），然后，flatMap把生成的多个容器“拍扁”成为一个容器并返回。返回的容器与原容器类型相同，但大小可能不同，其中元素的类型也可能不同
+```scala
+scala> books flatMap (s => s.toList)
+ List[Char] = List(H, a, d, o, o, p, H, i, v, e, H, D, F, S)
+```
+
+### 3 过滤操作
+过滤：遍历一个容器，从中获取满足指定条件的元素，返回一个新的容器
+==filter方法：接受一个返回布尔值的函数f作为参数，==并将f作用到每个元素上，将f返回真值的元素组成一个新容器返回
+
+```scala
+scala> val university = Map("NKU" ->"Nankai University", "THU" ->"Tsinghua University","PKU"->"Peking University","XMUT"->"Xiamen University of Technology")
+university: scala.collection.immutable.Map[String,String] = ...
+
+//过滤出值中包含“Nankai”的元素，contains为String的方法
+scala> val nkus = university filter {kv => kv._2 contains "Nankai"}
+universityOfNankai: scala.collection.immutable.Map[String,String] = Map(NKU -> Nankai University)
+
+scala> val l=List(1,2,3,4,5,6) filter {_%2==0}
+//使用了占位符语法，过滤能被2整除的元素
+l: List[Int] = List(2, 4, 6)
+
+```
+
+>[!Note]
+>`universityOfNankai:`是由传入的两个变量生成的输出。
+
+### 4 规约操作
+规约操作是对容器元素进行两两运算，将其“规约”为一个值
+==reduce方法：==接受一个二元函数f作为参数，首先将f作用在某两个元素上并返回一个值，然后再将f作用在上一个返回值和容器的下一个元素上，再返回一个值，依此类推，最后容器中的所有值会被规约为一个值
+
+```scala
+scala> val list =List(1,2,3,4,5)
+list: List[Int] = List(1, 2, 3, 4, 5)
+
+scala> list.reduce(_ + _) //将列表元素累加，使用了占位符语法
+Int = 15
+
+scala> list.reduce(_ * _) //将列表元素连乘
+Int = 120
+
+scala> list map (_.toString) reduce ((x,y)=>s"f($x,$y)")
+String = f(f(f(f(1,2),3),4),5) //f表示传入reduce的二元函数
+//可以看出规约顺序是从前往后
+
+```
+
+#### ==reduceLeft和reduceRight：==
+前者从左到右进行遍历，后者从右到左进行遍历
+
+![](image-20241115143631618.png)
+
+```scala
+scala> val list = List(1,2,3,4,5)
+list: List[Int] = List(1, 2, 3, 4, 5)
+scala> list reduceLeft {_-_}
+ Int = -13
+scala> list reduceRight {_-_}
+ Int = 3
+scala> val s = list map (_.toString)  //将整型列表转换成字符串列表
+s: List[String] = List(1, 2, 3, 4, 5)
+scala> s reduceLeft {(accu,x)=>s"($accu-$x)"}
+ String = ((((1-2)-3)-4)-5)//list reduceLeft{_-_}的计算过程
+scala> s reduceRight {(x,accu)=>s"($x-$accu)"}
+ String = (1-(2-(3-(4-5))))//list reduceRight{_-_}的计算过程
+
+```
+
+>[!Note]
+>注意从右规约并不是数列翻转后的从左规约，参考上面代码的`scala> list reduceRight {_-_}    Int = 3`的计算。` (1-(2-(3-(4-5))))`
+
+
+#### fold方法：
+==fold方法==一个双参数列表的函数，从提供的初始值开始规约。==第一个参数列表接受一个规约的初始值，第二个参数列表接受与reduce中一样的二元函数参数==
+foldLeft和foldRight：前者从左到右进行遍历，后者从右到左进行遍历
+
+```scala
+scala> val list =List(1,2,3,4,5)
+list: List[Int] = List(1, 2, 3, 4, 5)
+scala> list.fold(10)(_*_)
+ Int = 1200
+scala> (list fold 10)(_*_) //fold的中缀调用写法
+ Int = 1200
+scala> (list foldLeft 10)(_-_)//计算顺序(((((10-1)-2)-3)-4)-5)
+ Int = -5 
+scala> (list foldRight 10)(_-_) //计算顺序(1-(2-(3-(4-(5-10)))))
+ Int = -7
+
+```
+
+## 函数式编程实例
+```scala
+1   import java.io.File
+2	import scala.io.Source
+3	import collection.mutable.Map
+4	object WordCount {
+5		def main(args: Array[String]) { //main函数单独定义一个入口[]()
+6			val dirfile=new File("testfiles")
+7			val files  = dirfile.listFiles
+8			val results = Map.empty[String,Int]
+9			for(file <-files) {
+10				val data= Source.fromFile(file)
+11				val strs =data.getLines.flatMap{s =>s.split(" ")}
+12				strs foreach { word =>
+13					if (results.contains(word))
+14					results(word)+=1 else  results(word)=1
+15					}
+16				}
+17			results foreach{case (k,v) => println(s"$k:$v")}
+18		}
+19	}
+
+```
+
+- 行1-3：导入需要的类；
+- 行6：建立一个File对象，这里假设当前文件夹下有一个testfiles文件夹，且里面包含若干文本文件；
+- 行7：调用File对象的listFiles方法，得到其下所有文件对象构成的数组，files的类型为Array[java.io.File]；
+- 行8：建立一个可变的空的映射（Map）对象results，保存统计结果。映射中的条目都是一个(key,value)键值对，其中，key是单词，value是单词出现的次数；
+- 行9：通过for循环对文件对象进行循环，分别处理各个文件；
+- 行10：从File对象建立Source对象方便文件的读取；
+- 行11：getLines方法返回文件各行构成的迭代器对象，类型为Iterator[String]，flatMap进一步将每一行字符串拆分成单词，再返回所有这些单词构成的新字符串迭代器；
+- 行12-15：对上述的字符串迭代器进行遍历，在匿名函数中，对于当前遍历到的某个单词，如果这个单词以前已经统计过，就把映射results中以该单词为key的映射条目的value增加1。如果以前没有被统计过，则为这个单词新创建一个映射条目，只需要直接对相应的key进行赋值，就实现了添加新的映射条目；
+- 行17：对Map对象results进行遍历，输出统计结果。
+
 
