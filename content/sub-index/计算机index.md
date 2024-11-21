@@ -58,7 +58,7 @@
 3. [Linux-WSL入门笔记](Linux-WSL入门笔记.md)
 4. [分布式-hadoop安装与配置](分布式-hadoop安装与配置.md) 
 5. [分布式-spark安装与配置](分布式-spark安装与配置.md) 
-6. [分布式-scala语言.md](分布式-scala语言.md) ✨
+6. [分布式-scala语言](分布式-scala语言.md) ✨
 7. [分布式-scala上机任务1](分布式-scala上机任务1.md) ✨
 
 
