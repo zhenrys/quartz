@@ -1,7 +1,7 @@
 ---
 title: Welcome to Zhenry's Notebook Set!🗂️
 ---
- [![](hallofking.jpg)](Zhenry的笔记/Insight-集合/) 
+ [![](hallofking.jpg)](Zhenry的笔记/Insight-集合/)
 
 ## 👉关于笔记库
 本网站的主要作者们目前就读于[**南开大学统计与数据科学学院**](https://stat.nankai.edu.cn/)，我们正在尝试践行**开源精神**，将所学所收获的[[知识]]与[洞见](Zhenry的笔记\Insight-集合)分享出来，在辅助自己理解知识的同时，期待能够**与读者交流观点**，并**帮助到更多的人**。
@@ -26,7 +26,7 @@ title: Welcome to Zhenry's Notebook Set!🗂️
 ---
 # 🗽笔记库目录
 
-### 📂[数学与统计](数学与统计index.md) ✨
+### 📂[数学与统计](数学与统计index.md) 
  
 ### 📂[计算机](计算机index.md) ✨
 
